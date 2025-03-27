@@ -1,13 +1,77 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <h1>olaaa</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="src/style.css" rel="stylesheet">
+  <title>instagram-tailwind</title>
+</head>
+
+<body>
+
+  <div class="h-screen w-screen grid grid-cols-1 md:grid-cols-2 grid-rows-6">
+    <!-- Imagem principal -->
+    <div class="row-span-5 md:flex justify-end hidden">
+      <img class="w-max-96" src="./src/assets/fotos-instagram/celular-img.png" alt="celular" />
+    </div>
+
+    <!-- Formulário -->
+    <div class="row-span-5 flex justify-center items-center flex-col grid-cols-1">
+      <form class="w-80 flex flex-col justify-center items-center border rounded-sm px-10 py-4 gap-5">
+
+        <img class="w-52" src="./src/assets/fotos-instagram/insta-logo.png" alt="logo" />
+
+        <input class="bg-slate-50 h-9 w-full pl-3 border rounded-sm border-gray-200"
+          placeholder="Número de telefone, email">
+        <input class="bg-slate-50 h-9 w-full pl-3 border rounded-sm border-gray-200" placeholder="Senha">
+
+        <button class="bg-blue-400 w-full rounded-sm h-8 text-slate-50 hover:bg-blue-300">Entrar</button>
+
+        <a class="text-blue-800 font-bold cursor-pointer">Logar com Facebook</a>
+        <a class="text-blue-800 text-sm cursor-pointer">Esqueci minha senha</a>
+      </form>
+
+      <div class="border w-80 my-4 text-center py-4">
+        <p>Não tem conta ? <a class="text-blue-800 font-bold">Cadastrar-se</a></p>
+      </div>
+
+      <p>Baixe o Aplicativo</p>
+
+      <div class="flex gap-2 my-4">
+        <img class="h-10" src="./src/assets/fotos-instagram/apple.png" alt="app" />
+        <img class="h-10" src="./src/assets/fotos-instagram/google.png" alt="google" />
+      </div>
+
+    </div>
+
+    <!-- Roda pé  -->
+    <footer class="row-span-1 col-span-2">
+      <ul class="flex flex-wrap gap-5 justify-center">
+        <li class="text-slate-800 text-sm">Meta</li>
+        <li class="text-slate-800 text-sm">Sobre</li>
+        <li class="text-slate-800 text-sm">Blog</li>
+        <li class="text-slate-800 text-sm">Carreiras</li>
+        <li class="text-slate-800 text-sm">Ajuda</li>
+        <li class="text-slate-800 text-sm">API</li>
+        <li class="text-slate-800 text-sm">Privacidade</li>
+        <li class="text-slate-800 text-sm">Termos</li>
+        <li class="text-slate-800 text-sm">Localizações</li>
+        <li class="text-slate-800 text-sm">Instagram Lite</li>
+        <li class="text-slate-800 text-sm">Threads</li>
+        <li class="text-slate-800 text-sm">Upload de contatos e não usuários</li>
+        <li class="text-slate-800 text-sm">Meta Verified</li>
+      </ul>
+
+      <ul class=" flex flex-wrap gap-5 justify-center mt-6">
+        <li class="text-slate-800">Português (Brasil)</li>
+        <li class="text-slate-800">© 2025 Instagram from Meta</li>
+      </ul>
+    </footer>
+
+  </div>
+
+</body>
+
 </html>
